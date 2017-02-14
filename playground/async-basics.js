@@ -1,10 +1,14 @@
 console.log("Starting app");
 
 
-// setTimeout fucntion used 
+// setTimeout fucntion used
 setTimeout(() => {
   console.log('Inside of callback');
 }, 2000);
+
+setTimeout(() => {
+  console.log('Second setTimeout');
+}, 0);
 
 
 
