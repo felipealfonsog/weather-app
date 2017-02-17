@@ -1,0 +1,254 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'yargs', '--save' ]
+2 info using npm@3.10.10
+3 info using node@v6.9.5
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData yargs@^4.8.1
+8 silly fetchNamedPackageData yargs
+9 silly mapToRegistry name yargs
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'yargs',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'yargs',
+12 silly mapToRegistry   name: 'yargs',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/yargs
+14 verbose request uri https://registry.npmjs.org/yargs
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 12:28:19 AM
+17 verbose request id 8c1c8e994e2fc2f7
+18 verbose etag W/"5893f894-47d25"
+19 verbose lastModified Fri, 03 Feb 2017 03:27:16 GMT
+20 http request GET https://registry.npmjs.org/yargs
+21 info retry will retry, error on last attempt: Error: getaddrinfo EAI_AGAIN registry.npmjs.org:443
+22 info attempt registry request try #2 at 12:28:29 AM
+23 verbose etag W/"5893f894-47d25"
+24 verbose lastModified Fri, 03 Feb 2017 03:27:16 GMT
+25 http request GET https://registry.npmjs.org/yargs
+26 info retry will retry, error on last attempt: Error: getaddrinfo EAI_AGAIN registry.npmjs.org:443
+27 info attempt registry request try #3 at 12:29:29 AM
+28 verbose etag W/"5893f894-47d25"
+29 verbose lastModified Fri, 03 Feb 2017 03:27:16 GMT
+30 http request GET https://registry.npmjs.org/yargs
+31 silly get cb [ 304, undefined ]
+32 verbose etag https://registry.npmjs.org/yargs from cache
+33 verbose get saving yargs to /root/.npm/registry.npmjs.org/yargs/.cache.json
+34 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+35 silly install normalizeTree
+36 silly loadCurrentTree Finishing
+37 silly loadIdealTree Starting
+38 silly install loadIdealTree
+39 silly cloneCurrentTree Starting
+40 silly install cloneCurrentTreeToIdealTree
+41 silly cloneCurrentTree Finishing
+42 silly loadShrinkwrap Starting
+43 silly install loadShrinkwrap
+44 silly loadShrinkwrap Finishing
+45 silly loadAllDepsIntoIdealTree Starting
+46 silly install loadAllDepsIntoIdealTree
+47 silly resolveWithNewModule yargs@4.8.1 checking installable status
+48 silly cache add args [ 'yargs@^4.8.1', null ]
+49 verbose cache add spec yargs@^4.8.1
+50 silly cache add parsed spec Result {
+50 silly cache add   raw: 'yargs@^4.8.1',
+50 silly cache add   scope: null,
+50 silly cache add   escapedName: 'yargs',
+50 silly cache add   name: 'yargs',
+50 silly cache add   rawSpec: '^4.8.1',
+50 silly cache add   spec: '>=4.8.1 <5.0.0',
+50 silly cache add   type: 'range' }
+51 silly addNamed yargs@>=4.8.1 <5.0.0
+52 verbose addNamed ">=4.8.1 <5.0.0" is a valid semver range for yargs
+53 silly addNameRange { name: 'yargs', range: '>=4.8.1 <5.0.0', hasData: false }
+54 silly mapToRegistry name yargs
+55 silly mapToRegistry using default registry
+56 silly mapToRegistry registry https://registry.npmjs.org/
+57 silly mapToRegistry data Result {
+57 silly mapToRegistry   raw: 'yargs',
+57 silly mapToRegistry   scope: null,
+57 silly mapToRegistry   escapedName: 'yargs',
+57 silly mapToRegistry   name: 'yargs',
+57 silly mapToRegistry   rawSpec: '',
+57 silly mapToRegistry   spec: 'latest',
+57 silly mapToRegistry   type: 'tag' }
+58 silly mapToRegistry uri https://registry.npmjs.org/yargs
+59 verbose addNameRange registry:https://registry.npmjs.org/yargs not in flight; fetching
+60 verbose get https://registry.npmjs.org/yargs not expired, no request
+61 silly addNameRange number 2 { name: 'yargs', range: '>=4.8.1 <5.0.0', hasData: true }
+62 silly addNameRange versions [ 'yargs',
+62 silly addNameRange   [ '1.0.0',
+62 silly addNameRange     '1.0.1',
+62 silly addNameRange     '1.0.3',
+62 silly addNameRange     '1.0.4',
+62 silly addNameRange     '1.0.5',
+62 silly addNameRange     '1.0.6',
+62 silly addNameRange     '1.0.7',
+62 silly addNameRange     '1.0.8',
+62 silly addNameRange     '1.0.9',
+62 silly addNameRange     '1.0.10',
+62 silly addNameRange     '1.0.11',
+62 silly addNameRange     '1.0.12',
+62 silly addNameRange     '1.0.13',
+62 silly addNameRange     '1.0.15',
+62 silly addNameRange     '1.1.0',
+62 silly addNameRange     '1.1.1',
+62 silly addNameRange     '1.1.2',
+62 silly addNameRange     '1.1.3',
+62 silly addNameRange     '1.2.0',
+62 silly addNameRange     '1.2.1',
+62 silly addNameRange     '1.2.2',
+62 silly addNameRange     '1.2.3',
+62 silly addNameRange     '1.2.4',
+62 silly addNameRange     '1.2.5',
+62 silly addNameRange     '1.2.6',
+62 silly addNameRange     '1.3.0',
+62 silly addNameRange     '1.3.1',
+62 silly addNameRange     '1.3.2',
+62 silly addNameRange     '1.3.3',
+62 silly addNameRange     '2.1.1',
+62 silly addNameRange     '2.3.0',
+62 silly addNameRange     '3.0.0',
+62 silly addNameRange     '3.0.1',
+62 silly addNameRange     '3.0.2',
+62 silly addNameRange     '3.0.3',
+62 silly addNameRange     '3.0.4',
+62 silly addNameRange     '3.1.0',
+62 silly addNameRange     '3.2.1',
+62 silly addNameRange     '3.3.1',
+62 silly addNameRange     '3.4.0',
+62 silly addNameRange     '3.4.4',
+62 silly addNameRange     '3.4.5',
+62 silly addNameRange     '3.5.0',
+62 silly addNameRange     '3.5.1',
+62 silly addNameRange     '3.5.2',
+62 silly addNameRange     '3.5.3',
+62 silly addNameRange     '3.5.4',
+62 silly addNameRange     '3.6.0',
+62 silly addNameRange     '3.7.0',
+62 silly addNameRange     '3.7.1',
+62 silly addNameRange     '3.7.2',
+62 silly addNameRange     '3.8.0',
+62 silly addNameRange     '3.9.0',
+62 silly addNameRange     '3.9.1',
+62 silly addNameRange     '3.10.0',
+62 silly addNameRange     '3.11.0',
+62 silly addNameRange     '3.12.0',
+62 silly addNameRange     '3.13.0',
+62 silly addNameRange     '3.14.0',
+62 silly addNameRange     '3.15.0',
+62 silly addNameRange     '3.16.0',
+62 silly addNameRange     '3.16.1',
+62 silly addNameRange     '3.17.1',
+62 silly addNameRange     '3.18.0',
+62 silly addNameRange     '3.18.1',
+62 silly addNameRange     '3.19.0',
+62 silly addNameRange     '3.20.0',
+62 silly addNameRange     '3.21.0',
+62 silly addNameRange     '3.21.1',
+62 silly addNameRange     '3.22.0',
+62 silly addNameRange     '3.22.1',
+62 silly addNameRange     '3.22.2',
+62 silly addNameRange     '3.23.0',
+62 silly addNameRange     '3.24.0',
+62 silly addNameRange     '3.25.0',
+62 silly addNameRange     '3.26.0',
+62 silly addNameRange     '3.27.0',
+62 silly addNameRange     '3.28.0',
+62 silly addNameRange     '3.29.0',
+62 silly addNameRange     '3.30.0',
+62 silly addNameRange     '3.31.0',
+62 silly addNameRange     '3.32.0',
+62 silly addNameRange     '4.0.0-alpha1',
+62 silly addNameRange     '4.0.0-alpha2',
+62 silly addNameRange     '4.0.0-alpha3',
+62 silly addNameRange     '4.0.0-alpha4',
+62 silly addNameRange     '4.0.0-alpha5',
+62 silly addNameRange     '4.0.0',
+62 silly addNameRange     '4.1.0',
+62 silly addNameRange     '4.2.0',
+62 silly addNameRange     '4.3.0',
+62 silly addNameRange     '4.3.1',
+62 silly addNameRange     '4.3.2',
+62 silly addNameRange     '4.4.0',
+62 silly addNameRange     '4.5.0',
+62 silly addNameRange     '4.6.0-candidate',
+62 silly addNameRange     '4.6.0',
+62 silly addNameRange     '4.7.0-pre',
+62 silly addNameRange     '4.7.0',
+62 silly addNameRange     '4.7.1',
+62 silly addNameRange     ... 26 more items ] ]
+63 silly addNamed yargs@4.8.1
+64 verbose addNamed "4.8.1" is a plain semver version for yargs
+65 silly mapToRegistry name yargs
+66 silly mapToRegistry using default registry
+67 silly mapToRegistry registry https://registry.npmjs.org/
+68 silly mapToRegistry data Result {
+68 silly mapToRegistry   raw: 'yargs',
+68 silly mapToRegistry   scope: null,
+68 silly mapToRegistry   escapedName: 'yargs',
+68 silly mapToRegistry   name: 'yargs',
+68 silly mapToRegistry   rawSpec: '',
+68 silly mapToRegistry   spec: 'latest',
+68 silly mapToRegistry   type: 'tag' }
+69 silly mapToRegistry uri https://registry.npmjs.org/yargs
+70 verbose addRemoteTarball https://registry.npmjs.org/yargs/-/yargs-4.8.1.tgz not in flight; adding
+71 verbose addRemoteTarball [ 'https://registry.npmjs.org/yargs/-/yargs-4.8.1.tgz',
+71 verbose addRemoteTarball   'c0c42924ca4aaa6b0e6da1739dfb216439f9ddc0' ]
+72 info retry fetch attempt 1 at 12:29:30 AM
+73 info attempt registry request try #1 at 12:29:30 AM
+74 http fetch GET https://registry.npmjs.org/yargs/-/yargs-4.8.1.tgz
+75 info retry will retry, error on last attempt: Error: getaddrinfo EAI_AGAIN registry.npmjs.org:443
+76 info attempt registry request try #2 at 12:29:40 AM
+77 http fetch GET https://registry.npmjs.org/yargs/-/yargs-4.8.1.tgz
+78 info retry will retry, error on last attempt: Error: getaddrinfo EAI_AGAIN registry.npmjs.org:443
+79 info attempt registry request try #3 at 12:30:40 AM
+80 http fetch GET https://registry.npmjs.org/yargs/-/yargs-4.8.1.tgz
+81 error fetch failed https://registry.npmjs.org/yargs/-/yargs-4.8.1.tgz
+82 warn retry will retry, error on last attempt: Error: getaddrinfo EAI_AGAIN registry.npmjs.org:443
+83 info retry fetch attempt 2 at 12:30:50 AM
+84 info attempt registry request try #1 at 12:30:50 AM
+85 http fetch GET https://registry.npmjs.org/yargs/-/yargs-4.8.1.tgz
+86 info retry will retry, error on last attempt: Error: getaddrinfo EAI_AGAIN registry.npmjs.org:443
+87 info attempt registry request try #2 at 12:31:00 AM
+88 http fetch GET https://registry.npmjs.org/yargs/-/yargs-4.8.1.tgz
+89 info retry will retry, error on last attempt: Error: getaddrinfo EAI_AGAIN registry.npmjs.org:443
+90 info attempt registry request try #3 at 12:32:00 AM
+91 http fetch GET https://registry.npmjs.org/yargs/-/yargs-4.8.1.tgz
+92 error fetch failed https://registry.npmjs.org/yargs/-/yargs-4.8.1.tgz
+93 warn retry will retry, error on last attempt: Error: getaddrinfo EAI_AGAIN registry.npmjs.org:443
+94 info retry fetch attempt 3 at 12:33:00 AM
+95 info attempt registry request try #1 at 12:33:00 AM
+96 http fetch GET https://registry.npmjs.org/yargs/-/yargs-4.8.1.tgz
+97 info retry will retry, error on last attempt: Error: getaddrinfo EAI_AGAIN registry.npmjs.org:443
+98 info attempt registry request try #2 at 12:33:10 AM
+99 http fetch GET https://registry.npmjs.org/yargs/-/yargs-4.8.1.tgz
+100 info retry will retry, error on last attempt: Error: getaddrinfo EAI_AGAIN registry.npmjs.org:443
+101 info attempt registry request try #3 at 12:34:10 AM
+102 http fetch GET https://registry.npmjs.org/yargs/-/yargs-4.8.1.tgz
+103 error fetch failed https://registry.npmjs.org/yargs/-/yargs-4.8.1.tgz
+104 silly rollbackFailedOptional Starting
+105 silly rollbackFailedOptional Finishing
+106 silly runTopLevelLifecycles Finishing
+107 silly install printInstalled
+108 verbose stack Error: getaddrinfo EAI_AGAIN registry.npmjs.org:443
+108 verbose stack     at Object.exports._errnoException (util.js:1022:11)
+108 verbose stack     at errnoException (dns.js:33:15)
+108 verbose stack     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
+109 verbose cwd /var/www/html/dev/node.js/Udemy/Udemy_NodeJS_Course2.0/weather-app
+110 error Linux 3.16.0-4-amd64
+111 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "yargs" "--save"
+112 error node v6.9.5
+113 error npm  v3.10.10
+114 error code EAI_AGAIN
+115 error errno EAI_AGAIN
+116 error syscall getaddrinfo
+117 error getaddrinfo EAI_AGAIN registry.npmjs.org:443
+118 error If you need help, you may report this error at:
+118 error     <https://github.com/npm/npm/issues>
+119 verbose exit [ 1, true ]
