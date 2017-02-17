@@ -63,7 +63,7 @@
 
 
 
-// code as it seems from Andrew
+// code as it seems from Andrew - working properly 
 //
 
 const yargs = require('yargs');
