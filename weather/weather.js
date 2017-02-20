@@ -26,7 +26,7 @@
 //
 // console.log(`it's currently.${weatherResults.temperature}. it feels like ${weatherResults.apparentTemperature}`);
 // }
-//
+// The fix was found by andrew and it's just a paramenter that i needed to add.
 //
 // module.exports.getWeather = getWeather;
 
