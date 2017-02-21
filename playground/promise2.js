@@ -28,4 +28,7 @@ geocodeAddress('00000').then((location) => {
   console.log(JSON.stringify(location, undefined, 2));
 }, (errorMessage) => {
   console.log(errorMessage);
+}).catch((e) => {
+console.log(e);
+
 });
