@@ -1,37 +1,4 @@
-// const request = require('request');
-//
-//
-//
-//
-// var getWeather = (lat, lng, callback) => {
-// request({
-//   url: `https://api.darksky.net/forecast/ecd099679a492007358d1ba36b664ebe/${lat},${lng}`,
-//   json: true
-// }, (error, response, body) => {
-//   if (error) {
-//     callback("Unable to coneect to server");
-//   }  else if (response.statusCode === 400) {
-//     callback("Unable to fetch data from Servers");
-//   } else if (response.statusCode == 200) {
-//     callback(undefined, {
-//       temperature: body.currently.temperature,
-//       apparentTemperature: body.currently.apparentTemperature
-//     });
-//     //     console.log(body.currently.temperature);
-//   }
-//
-// });
-//
-// };
-//
-// console.log(`it's currently.${weatherResults.temperature}. it feels like ${weatherResults.apparentTemperature}`);
-// }
-// The fix was found by andrew and it's just a paramenter that i needed to add.
-//
-// module.exports.getWeather = getWeather;
 
-
-// code as it seems from Andrew
 
 const request = require('request');
 
@@ -54,7 +21,3 @@ var getWeather = (lat, lng, callback) => {
 };
 
 module.exports.getWeather = getWeather;
-
-
-
-// end code as it seems form andrew
