@@ -3,8 +3,8 @@
 const yargs = require('yargs');
 const axios = require('axios');
 
-// const geocode = require('./geocode/geocode');
-// const weather = require('./weather/weather');
+//const geocode = require('./geocode/geocode');
+//const weather = require('./weather/weather');
 
 const argv = yargs
   .options({
@@ -19,6 +19,8 @@ const argv = yargs
   .alias('help', 'h')
   .argv;
 
+
+// seems to be there's a problem here ... with both : encodedAddress and address 
   var encodedAddress = encodeURIComponent(address);
   var geocodeUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodedAddress}`
 
