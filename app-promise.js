@@ -20,12 +20,12 @@ const argv = yargs
   .argv;
 
 
-// seems to be there's a problem here ... with both : encodedAddress and address 
-  var encodedAddress = encodeURIComponent(address);
+// seems to be there's a problem here ... with both : encodedAddress and address
+  var encodedAddress = encodeURIComponent(argv.address);
   var geocodeUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodedAddress}`
 
 
 
-  axous.get(geocodeUrl).then((response) => {
+  axios.get(geocodeUrl).then((response) => {
      console.log(response.data);
   });
