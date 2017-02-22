@@ -20,7 +20,8 @@ const argv = yargs
   .argv;
 
 
-// seems to be there's a problem here ... with both : encodedAddress and address
+// fixed all the problems
+
   var encodedAddress = encodeURIComponent(argv.address);
   var geocodeUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodedAddress}`
 
