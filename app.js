@@ -63,7 +63,7 @@
 
 
 
-// code as it seems from Andrew - working properly, only with the issue that is not showing C° cause it's showing F° in my debian linux machine 
+// code as it seems from Andrew - working properly, only with the issue that is not showing C° cause it's showing F° in my debian linux machine
 //
 
 const yargs = require('yargs');
