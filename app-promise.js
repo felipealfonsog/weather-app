@@ -31,7 +31,17 @@ const argv = yargs
     if response.data.status === 'ZERO_RESULTS') {
       throw new Error('Unable to fid tha address.');
     }
-     console.log(response.data);
+
+    var lat = response.data.results[0].geometry.localtion.lat;
+    var lng = response.data.results[0].geometry.localtion.lng;
+    var weatherURL= `https://api.forecast.io/forecast/4a04d1c42fd9d32c97a2c291a32d5e2d/${lat},${lng}?units=si`;
+    console.log(response.data.results[0].formatted_address);
+    return  axios.get(weatherURL);
+  }).then ((response) => {
+    var temperature = response.data.currently.temperature;
+    var temperature = response.data.currently.apparentTemperature;
+
+    console.log('it's currently ${temperature}. It feels like ${apparentTemperature}
    }).catch((e) => {
      if (e.code === 'ENOTFOUND') {
        console.log('Unable to connect to API servers.');
