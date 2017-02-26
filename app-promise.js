@@ -28,5 +28,14 @@ const argv = yargs
 
 
   axios.get(geocodeUrl).then((response) => {
+    if response.data.status === 'ZERO_RESULTS') {
+      throw new Error('Unable to fid tha address.');
+    }
      console.log(response.data);
+   }).catch((e) => {
+     if (e.code === 'ENOTFOUND') {
+       console.log('Unable to connect to API servers.');
+     } else {
+       console.log('e.message');
+     }
   });
